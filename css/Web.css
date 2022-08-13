@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+body{
+  color: white;
+  background: black;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  border-bottom: 2px solid white;
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+}
+header.sticky{
+  background: white;
+  opacity: 0.9;
+  padding: 15px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+header.sticky #main-menu a{
+  color: black;
+}
+header.sticky #logo{
+filter: brightness(0);
+}
+.inner-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-menu{
+  display: flex;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: black;
+    padding: 15px 0 5px 10px;
+    margin-top: 26px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+#main-menu ul.sub-menu.ticky{
+    background-color: white;
+    padding: 15px 0 5px 10px;
+    margin-top: 0;
+}
+#main-menu ul.sub-menu.ticky li{
+    color: black;
+    border-bottom: 1px solid black;
+}
+#main-menu a{
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: white;
+}
+
+#main-menu ul.sub-menu li {
+    padding: 10px 20px 10px 31px;
+    right: 0;
+    border-bottom: 1px solid white;
+}
+#main-menu li:active ul.sub-menu{
+  display: block;
+}
+#main-menu ul.sub-menu li:last-child {
+  border: none;
+}
+#banner{
+  background-image: url(https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  min-height: 480px;
+  width: 100%;
+  background-size: cover;;
+}
+#content h1{
+  padding: 20px 0px;
+}
+#content p{
+  margin-bottom: 20px;
+}
