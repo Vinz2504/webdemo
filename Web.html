@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Web.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container">
+                <div id="logo">
+                    <a href="#"><img src="tainguyen/1.png" width="140"></a>
+                </div>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a> Liên hệ </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Zalo</a></li>
+                                <li><a href="">Gmail</a></li>
+                                <li><a href="">Instagram</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="banner">
+        </div>
+        <div id="content" class="container">
+            <h1>Hãy viết gì đó cho trang của bạn</h1>
+            <p>
+                Cuối tuần này, Quang Hải cùng các đồng đội ở Pau FC sẽ bước vào vòng 2 Ligue 2 mùa giải 2022/2023 gặp đối thủ Dijon trên sân nhà. Đây là trận đấu sân nhà đầu tiên của đội bóng này trong mùa giải năm nay. Trước trận đấu, các cầu thủ Pau FC đã nhận được thông tin có thể coi là vui khi họ sẽ thi đấu tại Stade du Hameau có sức chứa 18.324 người thay vì sân Nouste Camp có sức chứa khiêm tốn chi 4.031 người. Lý do là bởi sân Nouste Camp vẫn đang trong quá trình sửa chữa một số hạng mục nên chưa sẵn sàng tổ chức trận đấu. Việc chơi ở sân vận động có sức chứa lớn sẽ là cơ hội để Pau FC nhận được sự cổ vũ của đông đảo khán giả hơn, điều mà thầy trò ông Didier Tholot đang rất cần sau trận ra quân thảm bại 0-4 trước Guingamp.
+            </p>
+            <p>
+                Cuối tuần này, Quang Hải cùng các đồng đội ở Pau FC sẽ bước vào vòng 2 Ligue 2 mùa giải 2022/2023 gặp đối thủ Dijon trên sân nhà. Đây là trận đấu sân nhà đầu tiên của đội bóng này trong mùa giải năm nay. Trước trận đấu, các cầu thủ Pau FC đã nhận được thông tin có thể coi là vui khi họ sẽ thi đấu tại Stade du Hameau có sức chứa 18.324 người thay vì sân Nouste Camp có sức chứa khiêm tốn chi 4.031 người. Lý do là bởi sân Nouste Camp vẫn đang trong quá trình sửa chữa một số hạng mục nên chưa sẵn sàng tổ chức trận đấu. Việc chơi ở sân vận động có sức chứa lớn sẽ là cơ hội để Pau FC nhận được sự cổ vũ của đông đảo khán giả hơn, điều mà thầy trò ông Didier Tholot đang rất cần sau trận ra quân thảm bại 0-4 trước Guingamp.
+            </p>
+            <p>
+                Cuối tuần này, Quang Hải cùng các đồng đội ở Pau FC sẽ bước vào vòng 2 Ligue 2 mùa giải 2022/2023 gặp đối thủ Dijon trên sân nhà. Đây là trận đấu sân nhà đầu tiên của đội bóng này trong mùa giải năm nay. Trước trận đấu, các cầu thủ Pau FC đã nhận được thông tin có thể coi là vui khi họ sẽ thi đấu tại Stade du Hameau có sức chứa 18.324 người thay vì sân Nouste Camp có sức chứa khiêm tốn chi 4.031 người. Lý do là bởi sân Nouste Camp vẫn đang trong quá trình sửa chữa một số hạng mục nên chưa sẵn sàng tổ chức trận đấu. Việc chơi ở sân vận động có sức chứa lớn sẽ là cơ hội để Pau FC nhận được sự cổ vũ của đông đảo khán giả hơn, điều mà thầy trò ông Didier Tholot đang rất cần sau trận ra quân thảm bại 0-4 trước Guingamp.
+            </p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky');
+                } else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop()) {
+                    $('ul.sub-menu').addClass('ticky');
+                } else {
+                    $('ul.sub-menu').removeClass('ticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
